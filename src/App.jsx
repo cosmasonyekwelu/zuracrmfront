@@ -11,7 +11,7 @@ import SignUp from "./pages/SignUp.jsx";
 import Home from "./pages/Home.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Demo from "./pages/Demo.jsx";
-import Contact from "./pages/Contact.jsx";
+import Contact from "./pages/Contactme.jsx";
 
 // Lazy pages (private)
 const SearchPage        = lazy(() => import("./pages/SearchPage.jsx"));
@@ -113,7 +113,7 @@ export default function App() {
             <Route path="/signin"   element={<PublicOnly><SignIn /></PublicOnly>} />
             <Route path="/signup"   element={<PublicOnly><SignUp /></PublicOnly>} />
             <Route path="/demo"     element={<Demo />} />
-            <Route path="/contact"  element={<Contact />} />
+            <Route path="/contacts"  element={<Contact />} />
 
             {/* Private - Home & Search */}
             <Route

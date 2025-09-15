@@ -225,7 +225,7 @@ export default function Landing() {
                 <h3 style={{ margin: 0 }}>{p.name}</h3>
                 <p style={{ marginTop: 6 }}>{p.desc}</p>
                 <div style={{ marginTop: 15 }}>
-                  <Link to="/contact" className="btn btn-primary">Contact Sales</Link>
+                  <Link to="/contacts" className="btn btn-primary">Contact Sales</Link>
                 </div>
               </div>
             ))}

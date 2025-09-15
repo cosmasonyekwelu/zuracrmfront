@@ -6,7 +6,7 @@
  * DELETE /contacts/:id
  */
 import { useEffect, useMemo, useState } from "react";
-import API from "../services/api";
+import API from "../services/api.js";
 import AppSidebar from "../components/AppSidebar.jsx";
 import HeaderBar from "../components/HeaderBar.jsx";
 
