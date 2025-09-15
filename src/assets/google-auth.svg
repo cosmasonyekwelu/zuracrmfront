@@ -1,0 +1,14 @@
+<!-- Simple Google-auth style mark (safe placeholder). Replace with Google's official asset if needed. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="36" viewBox="0 0 120 36">
+  <g>
+    <!-- Circle background -->
+    <circle cx="18" cy="18" r="16" fill="#fff" stroke="#e5e7eb" />
+    <!-- Stylized multi-color G (approximate, not the official mark) -->
+    <path d="M18 8a10 10 0 1 0 7.07 17.07l-2.83-2.83A6.5 6.5 0 1 1 18 11.5c1.56 0 3 .55 4.13 1.46l2.4-2.4A9.95 9.95 0 0 0 18 8z" fill="#34A853"/>
+    <path d="M30 18c0-.69-.06-1.36-.18-2H18v4h6.82A6 6 0 0 1 18 24.5c-2.57 0-4.76-1.67-5.55-3.98l-3.05 2.35A10 10 0 0 0 18 28c5.52 0 10-4.48 10-10z" fill="#4285F4"/>
+    <path d="M12.45 20.52A6.5 6.5 0 0 1 11.5 18c0-.87.18-1.7.5-2.45l-3.05-2.35A10 10 0 0 0 8 18c0 1.66.4 3.23 1.11 4.61l3.34-2.09z" fill="#FBBC05"/>
+    <path d="M18 11.5c1.56 0 3 .55 4.13 1.46l2.4-2.4A9.95 9.95 0 0 0 18 8c-2.45 0-4.71.9-6.45 2.4l3 2.35A6.48 6.48 0 0 1 18 11.5z" fill="#EA4335"/>
+    <!-- Word label -->
+    <text x="40" y="23" font-family="Inter, system-ui, Arial" font-size="14" fill="#111827">Google Auth</text>
+  </g>
+</svg>

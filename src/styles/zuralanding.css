@@ -1,0 +1,116 @@
+:root{
+  --z-bg:#0b1020; --z-text:#0f172a; --z-muted:#64748b;
+  --z-primary:#1d9bf0; /* accent / links */
+  --z-cta:#ef4444;     /* main CTA */
+  --z-sky:#38bdf8; --z-rose:#fb7185; --z-emerald:#34d399; --z-amber:#f59e0b;
+  --ring:rgba(29,155,240,.25);
+}
+
+/* ===== Scope everything under .zura so we don't fight the rest of the app ===== */
+.zura{ color:var(--z-text); background:#fff; }
+.zura *{ box-sizing:border-box }
+.zura a{ color:inherit; text-decoration:none }
+.zura .container{ width:min(1180px,92vw); margin:0 auto }
+
+/* Buttons */
+.zura .btn{ padding:.9rem 1.15rem; border-radius:.8rem; border:1px solid transparent; font-weight:700; cursor:pointer; background:#e5e7eb }
+.zura .btn:focus{ outline:3px solid var(--ring) }
+.zura .btn-primary{ background:var(--z-cta); color:#fff; border-color:var(--z-cta) }
+.zura .btn-outline{ background:#fff; border-color:#cbd5e1; color:#0f172a }
+.zura .btn-ghost{ background:transparent; border-color:transparent }
+
+/* Inputs */
+.zura .input{ width:100%; padding:.9rem 1rem; border:1px solid #e5e7eb; border-radius:.7rem; font-size:14px }
+.zura .input:focus{ outline:2px solid var(--ring); border-color:#93c5fd }
+.zura .row{ display:flex; gap:12px } .zura .row>*{ flex:1 }
+
+/* Cards & shadows */
+.zura .card{ background:#fff; border:1px solid #e5e7eb; border-radius:1rem; padding:1.25rem }
+.zura .shadow-lg{ box-shadow:0 30px 60px rgba(2,6,23,.08) }
+.zura .shadow-xl{ box-shadow:0 35px 80px rgba(2,6,23,.10) }
+
+/* Pills & chips */
+.zura .pill{ display:inline-flex; align-items:center; height:28px; padding:0 .6rem; border-radius:999px; font-weight:700; font-size:12px; background:#f1f5f9; color:#0f172a; border:1px solid #e5e7eb }
+.zura .pill--rose{ background:rgba(251,113,133,.12); border-color:rgba(251,113,133,.35); color:#9f1239 }
+.zura .pill--sky{ background:rgba(56,189,248,.12); border-color:rgba(56,189,248,.35); color:#0c4a6e }
+.zura .brand{ color:var(--z-cta) }
+
+/* Sections */
+.zura .section{ padding:48px 0 }
+.zura .section--alt{ background:#fbfdff }
+.zura .eyebrow{ text-transform:uppercase; letter-spacing:.08em; color:var(--z-muted); font-weight:700; font-size:12px; margin:0 0 10px }
+.zura .section__title{ font-size:34px; margin:0 0 8px }
+.zura .section__sub{ color:#475569; margin:0 0 18px }
+
+/* Hero */
+.zura .hero{ min-height:82vh; display:flex; align-items:center }
+.zura .hero--stripe{
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.95)),
+    repeating-linear-gradient(90deg,#f0f9ff 0 120px,#f8fafc 120px 240px,#fff7ed 240px 360px);
+  border-bottom:1px solid #eef2f7;
+}
+.zura .hero__inner{ display:grid; grid-template-columns: 1.2fr 0.8fr; gap:28px; align-items:center }
+.zura .hero__copy h1{ font-size:64px; line-height:1.02; margin:6px 0 10px }
+.zura .hero__copy .sub{ font-size:18px; color:#475569; max-width:640px }
+.zura .hero__cta{ display:flex; gap:10px; margin:16px 0 10px }
+
+/* Logos */
+.zura .logo-row{ display:flex; flex-wrap:wrap; gap:12px; align-items:center }
+.zura .logo-chip{ height:40px; padding:0 14px; border-radius:999px; display:flex; align-items:center; justify-content:center; border:1px solid #e5e7eb; background:#fff; color:#0f172a; font-weight:700; font-size:14px }
+
+/* Feature grid */
+.zura .feature-grid{ display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:14px }
+.zura .feature-card{ border-radius:16px; padding:18px; border:1px solid #e5e7eb; background:linear-gradient(180deg, rgba(255,255,255,.9), #fff) }
+.zura .feature-card h3{ margin:6px 0 6px }
+.zura .feature-card p{ margin:0; color:#475569 }
+.zura .feature-card--sky{ background:linear-gradient(180deg, #f0f9ff, #ffffff) }
+.zura .feature-card--rose{ background:linear-gradient(180deg, #fff1f2, #ffffff) }
+.zura .feature-card--emerald{ background:linear-gradient(180deg, #ecfdf5, #ffffff) }
+.zura .feature-card--amber{ background:linear-gradient(180deg, #fffbeb, #ffffff) }
+
+/* CTA band */
+.zura .cta-band{ background:linear-gradient(90deg, #fee2e2, #dbeafe, #fef9c3); border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb }
+.zura .cta-band__inner{ display:flex; align-items:center; justify-content:space-between; gap:14px; padding:20px 0 }
+.zura .cta-band__buttons{ display:flex; gap:10px }
+
+/* Footer */
+.zura .footer{ border-top:1px solid #e5e7eb; background:#fff }
+.zura .footer-grid{ display:grid; grid-template-columns:1.2fr repeat(4,1fr); gap:18px; padding:28px 0 }
+.zura .footer small{ color:#475569 }
+
+/* Notes, labels */
+.zura .tiny{ font-size:12px; color:#475569; display:flex; gap:8px; align-items:flex-start; margin:6px 0 10px }
+.zura .note{ margin:4px 0 6px; font-size:14px }
+.zura .note.ok{ color:green } .zura .note.err{ color:crimson }
+
+/* Responsive tweaks */
+@media (max-width: 1024px){
+  .zura .hero__copy h1{ font-size:48px }
+  .zura .footer-grid{ grid-template-columns: repeat(3,1fr) }
+  .zura .feature-grid{ grid-template-columns: repeat(2, minmax(0,1fr)) }
+}
+@media (max-width: 860px){
+  .zura .hero__inner{ grid-template-columns:1fr }
+  .zura .hero{ min-height:70vh }
+  .zura .footer-grid{ grid-template-columns: repeat(2,1fr); row-gap:24px }
+}
+@media (max-width: 640px){
+  .zura .container{ width:min(100%,92vw) }
+  .zura .hero__copy h1{ font-size:36px; line-height:1.1 }
+  .zura .hero__copy .sub{ font-size:16px; max-width:none }
+  .zura .row{ flex-direction:column; gap:10px }
+  .zura .btn{ width:100%; padding:1rem 1.15rem }
+  .zura .card{ padding:1rem; border-radius:.9rem }
+  .zura .section{ padding:32px 0 }
+  .zura .feature-grid{ grid-template-columns:1fr }
+}
+@media (max-width: 480px){
+  .zura .eyebrow, .zura .pill{ height:24px; font-size:11px; padding:0 .5rem }
+}
+
+/* Highlight the active section link */
+.nav-link.active { color: var(--z-primary); }
+
+/* Keep anchors from tucking under the sticky navbar */
+.section { scroll-margin-top: 96px; } /* adjust if your header height differs */
